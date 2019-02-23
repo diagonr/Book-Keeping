@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane fx:id="titledPaneAudit" animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" text="Audit Trail" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#onBackClick" text="Back" />
+            <ScrollPane layoutY="28.0" prefHeight="351.0" prefWidth="600.0">
+               <content>
+                  <ListView fx:id="auditList" onMouseClicked="#itemClick" prefHeight="348.0" prefWidth="598.0" />
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
